@@ -1,0 +1,8 @@
+\\192.168.50.245/smk_pgri
+
+1. Perkenalan IP addres (alamat)
+2. Perkenalan tag title
+3. penambahan gambar
+- offline
+- online
+4. Pengetahuan tentang file index
