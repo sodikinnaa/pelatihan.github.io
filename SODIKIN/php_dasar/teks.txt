@@ -1,0 +1,4 @@
+Dalam php dasar
+1. Php memilik ekstensi .php 
+2. variabel, method, function, 
+3. string, integer, fload, dll

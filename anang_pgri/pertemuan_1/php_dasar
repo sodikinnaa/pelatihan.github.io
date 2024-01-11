@@ -1,0 +1,6 @@
+<?php
+// pembuatan variabel diawali dengan tanda $
+$nama = "Anang Darmawan";
+$umur = "16";
+
+echo "nama: $nama, umur: 16";
