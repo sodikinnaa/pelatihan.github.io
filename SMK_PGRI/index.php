@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List Folder</title>
+    <title>PELATIAN PKL UNIVERSITAS TEKNOKRAT INDONESIA</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -58,12 +58,13 @@
             $dir = '.'; // Ganti dengan path direktori yang ingin ditampilkan
 
             // Membaca isi direktori
-            $items = scandir($dir);
+            $folders = scandir($dir);
 
-            // Menampilkan semua item (baik folder maupun file) dalam bentuk daftar
-            foreach ($items as $item) {
-                if ($item != '.' && $item != '..') {
-                    echo '<li><i class="fas fa-folder" style="padding-right: 10px;"></i><a href="' . $item . '">' . $item . '</a></li>';
+            // Menampilkan folder dalam bentuk daftar
+            foreach ($folders as $folder) {
+                // Hanya menampilkan folder (bukan file atau direktori lainnya)
+                if (is_dir($dir . '/' . $folder) && $folder != '.' && $folder != '..') {
+                    echo '<li><i class="fas fa-folder" style="padding: 10x;""></i><a href="' . $folder . '">' . $folder . '</a></li>';
                 }
             }
             ?>
